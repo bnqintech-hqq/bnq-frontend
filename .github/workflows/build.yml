@@ -11,21 +11,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # 1. Code ko GitHub Action server par lana
     - name: Checkout Code
       uses: actions/checkout@v4
 
-    # 2. Node.js setup karna
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '20' # Aap apne hisaab se version set kar sakte hain
-        cache: 'npm'
+        node-version: '24' # Node version update kar diya hai warning hatane ke liye
 
-    # 3. Packages install karna
     - name: Install Dependencies
       run: npm install
 
-    # 4. Code ka build banana
     - name: Build Next.js App
       run: npm run build
