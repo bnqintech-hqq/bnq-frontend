@@ -1,0 +1,31 @@
+name: Next.js Frontend Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Code ko GitHub Action server par lana
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    # 2. Node.js setup karna
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20' # Aap apne hisaab se version set kar sakte hain
+        cache: 'npm'
+
+    # 3. Packages install karna
+    - name: Install Dependencies
+      run: npm install
+
+    # 4. Code ka build banana
+    - name: Build Next.js App
+      run: npm run build
