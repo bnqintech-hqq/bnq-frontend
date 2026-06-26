@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/bnqintech/frontend/app/loading.tsx"],"sourcesContent":["export default function RootLoading() {\n  return (\n    <div className=\"flex min-h-[60vh] items-center justify-center\">\n      <div className=\"flex flex-col items-center gap-4\">\n        <div className=\"h-10 w-10 animate-spin rounded-full border-4 border-slate-200 border-t-blue-600\" />\n        <p className=\"text-sm font-medium text-slate-500 animate-pulse\">Loading...</p>\n      </div>\n    </div>\n  );\n}\n"],"names":["RootLoading","className"],"mappings":";;;;;;AAAe,SAASA;IACtB,qBACE,8OAAC;QAAIC,WAAU;kBACb,cAAA,8OAAC;YAAIA,WAAU;;8BACb,8OAAC;oBAAIA,WAAU;;;;;;8BACf,8OAAC;oBAAEA,WAAU;8BAAmD;;;;;;;;;;;;;;;;;AAIxE"}}]
+}
