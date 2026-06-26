@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/bnqintech/frontend/app/%28auth%29/loading.tsx"],"sourcesContent":["export default function AuthLoading() {\n  return (\n    <div className=\"flex min-h-[60vh] items-center justify-center\">\n      <div className=\"h-10 w-10 animate-spin rounded-full border-4 border-slate-200 border-t-blue-600\" />\n    </div>\n  );\n}\n"],"names":["AuthLoading","className"],"mappings":";;;;;;AAAe,SAASA;IACtB,qBACE,8OAAC;QAAIC,WAAU;kBACb,cAAA,8OAAC;YAAIA,WAAU;;;;;;;;;;;AAGrB"}}]
+}
